@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+
+footer {
+    border-top: 5px solid goldenrod;
+    background-color: maroon;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5vh;
+}
+
+/* #region Nav Bar */
+header {
+    background-color: maroon;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    font-size: 2vh;
+    z-index: 999;
+}
+
+header a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh 1.2vh;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+header a:hover {
+    color: goldenrod;
+}
+
+.dropbtn {
+    border: none;
+}
+
+.dropdown {
+    float: left;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: maroon;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transform: translateY(4vh)
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: goldenrod;
+}
+
+#progressContainer {
+    display: block;
+    position: fixed;
+    top: 50vh;
+    right: 0;
+    width: 100vw;
+    height: 1vh;
+    background-color: transparent;
+}
+
+#progressBar {
+    display: block;
+    width: 1vw;
+    background: goldenrod;
+    border-radius: 15px;
+}
+
+#toTopButton {
+    position: fixed;
+    right: 5vw;
+    bottom: 5vw;
+    background-color: maroon;
+    padding: 1vh;
+    color: goldenrod;
+    font-size: 4vh;
+    text-decoration: none;
+    border: 3px solid goldenrod;
+    border-radius: 15px;
+}
+
+/* #endregion Nav Bar */
+/* #region Slideshow */
+.mySlides {
+    display: none
+}
+
+.slideshow-container {
+    width: 100vw;
+    position: relative;
+    top: 4vh;
+    margin: auto;
+    height: 85vh;
+}
+
+.slideshow-container img {
+    vertical-align: middle;
+    height: 80vh;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: maroon;
+    font-weight: bold;
+    font-size: 10vh;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: goldenrod;
+}
+
+.text {
+    color: goldenrod;
+    font-size: 5vh;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: goldenrod;
+    font-size: 5vh;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 2vh;
+    width: 2vh;
+    margin: 0 1vw;
+    background-color: maroon;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: goldenrod;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* #endregion Slideshow */
+/* #region Announcements */
+.announcements,
+ul {
+    padding-left: 5vw
+}
+
+h1 {
+    color: maroon;
+    font-size: 4vh;
+}
+
+h3 {
+    color: black;
+    font-size: 2vh;
+}
+
+p {
+    color: slategrey;
+    font-size: 1.5vh;
+}
+
+li img {
+    width: 20vw;
+    height: auto;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: all .5s;
+}
+
+li img:hover {
+    transform: scale(1.1);
+}
+
+.flex div {
+    display: inline-block;
+    width: 45vw;
+}
+
+/* #endregion Announcements */

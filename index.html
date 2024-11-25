@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title></title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </header>
+    <body>
+        <header>
+            <div class="dropdown">
+                <a class="dropbtn">Home</a>
+                <div class="dropdown-content">
+                    <a href="#school">School Announcements</a>
+                    <a href="#clubs">Club Announcements</a>
+                    <a href="#sports">Sports Announcements</a>
+                </div>
+                </div>
+            <a href="https://oldcolony.us/" target="_blank">Old Colony</a>
+            <a href="https://oldcolony.us/students/" target="_blank">Old Colony Students</a>
+            <!-- <div id="progressContainer">
+                <span id="progressBar"></span>
+            </div> -->
+        </header>
+        <main>
+            <section>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="images/old-colony-campus.jpg" style="width:100%">
+                      <div class="text">Old Colony Campus</div>
+                    </div>
+                    <div class="slide fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="images/excellenceCabinet1.jpg" style="width:100%">
+                      <div class="text">Computer Science Excellency Cabinet</div>
+                    </div>
+                    <div class="slide fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="images/excellenceCabinet2.jpg" style="width:100%">
+                      <div class="text">Student Excellency Cabinet</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="setSlide(1)"></span>
+                    <span class="dot" onclick="setSlide(2)"></span>
+                    <span class="dot" onclick="setSlide(3)"></span>
+                </div>
+            </section>
+            <section class="announcements">
+                <div class="flex">
+                    <div id="school">
+                        <h1>General School Announcements</h1>
+                        <ul>
+                            <li>
+                                <h3>Computer Science Excellence Cabinet</h3>
+                                <p>Computer Science students enter excellence cabinet for exceeding expectations in the most recent programming tournament.</p>
+                                <img src="images/excellenceCabinet1.jpg">
+                            </li>
+                            <li>
+                                <h3>Student Excellence Cabinet Exceeds Expectations</h3>
+                                <p>Several of the students in the student excellence cabinet have also exceeded expectations in the state tournament for being the best students!!!</p>
+                                <img src="images/excellenceCabinet2.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div id="clubs">
+                        <h1>Club Announcements</h1>
+                        <ul>
+                            <li>
+                                <h3>Chess Club Victory</h3>
+                                <p>Old Colony Chess Club scores major victory!!! All members of the chess team won at least one game, causing us to be third and proceed to state finals.</p>
+                                <img src="images/chess.jpg">
+                            </li>
+                            <li>
+                                <h3>Drama Club To Perform Club After School On Friday</h3>
+                                <p>The school Drama Club will be performing The Nutcracker after school on Friday, tickets are $10 per adult, $5 for children. Dont be late, show your support buy buying tickets and merch.</p>
+                                <img src="images/drama.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="sports">
+                        <h1>Sports Announcements</h1>
+                        <ul>
+                            <li>
+                                <h3>Upcoming Football Game</h3>
+                                <p>The Old Colony Cougars have a home football game with the Upper Cape Tech Pirates this Saturday from 10am-2pm. Dont be late, dont miss it, and show your support by buying merch from our stores!!!</p>
+                                <img src="images/footballTeam.jpg">
+                            </li>
+                            <li>
+                                <h3>Old Colony Soccer Team Takes Huge Loss</h3>
+                                <p>Old Colony Soccer Team faces New Bedford High, losing the game by a major 15 points. Our soccer team will be doubling their efforts and training harder than ever before to take back the crown and regain victory.</p>
+                                <img src="images/soccer.jpeg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <a id="toTopButton" href="#">Top</a>
+        </main>
+        <footer>
+            <h2>Copyright © 2024 Old Colony Regional Vocational Technical High School</h2>
+            <h2>For more information please contact Landen Ingerslev at ingerslevlk@oldcolony.info</h2>
+            <h2>Old Colony Address: 476 North Ave</h2>
+        </footer>
+    </body>
+</html>
